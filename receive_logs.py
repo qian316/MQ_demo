@@ -2,6 +2,7 @@
 
 # 发布/订阅 -- 日志消费端
 # 把消费到的数据保存在log日志文件中。 python3 receive.logs > logs_from_rabbit.log
+#查看交换机与队列的绑定情况：rabbitmqctl.bat list_bindings
 
 import pika
 connection = pika.BlockingConnection(pika.ConnectionParameters(host='localhost'))
